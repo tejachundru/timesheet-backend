@@ -4,6 +4,7 @@ export interface DtoLogin {
     uid: string
   }
   fullname: string
+  email: string
   accessToken: string
   expiresIn: number
   message: string

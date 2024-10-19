@@ -145,6 +145,7 @@ export default class AuthService {
       tokenType: 'Bearer',
       user: payloadToken,
       fullname: getUser.fullname,
+      email: getUser.email,
     }
 
     return newData

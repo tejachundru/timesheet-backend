@@ -30,7 +30,7 @@ class Team extends Base {
   name: string
 
   @Column
-  description?: string
+  description: string
 
   @IsUUID(4)
   @ForeignKey(() => User)

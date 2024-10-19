@@ -21,6 +21,7 @@
     "db:drop": "npx sequelize-cli db:drop",
     "db:create": "npx sequelize-cli db:create",
     "db:reset": "npm-run-all db:drop db:create db:migrate db:seed",
+    "db:create-migration-file": "sh ./scripts/create-migration-file.sh",
     "deploy:pm2": "npm run build && npx pm2 reload ecosystem.config.js",
     "serve:staging": "NODE_ENV=staging node ./dist/main.js",
     "serve:production": "NODE_ENV=production node ./dist/main.js",
